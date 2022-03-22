@@ -1,5 +1,4 @@
 
-// A simple C program to show function pointers as parameter
 #include <stdio.h>
 
 int multiply(int a, int b){
@@ -19,10 +18,6 @@ void calculater(int (*fun)(),int a, int b)
 {
     printf("%d\n",(fun)(a,b));
 }
-
-// A function that receives a simple function
-// as parameter and calls the function
-  
 int main()
 {
     int x = 4, y = 2;
@@ -32,3 +27,10 @@ int main()
     
     return 0;
 }
+
+//output
+/*
+x = 4 y = 2      x-y = 2
+x = 4 y = 2      x+y = 6
+x = 4 y = 2      x*y = 8
+*/
